@@ -7,13 +7,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pagination/main.dart';
 
-import 'package:pagination/pagination.dart';
 
 void main() {
   testWidgets('PaginationNumber smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MaterialApp(home: PaginationNumber()));
+    await tester.pumpWidget(MaterialApp(home: ScannerScreen()));
 
     // Verify that our page number starts at 0.
     expect(find.text('Page Number 0'), findsOneWidget);
